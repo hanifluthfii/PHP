@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasa Arsitek </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <section class="header" id="header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+        <div class="nav-links" id="nav-links">
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="design.html">DESIGN</a></li>
+                <li><a href="testimonials.html">TESTIMONIAL</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+<!-- DESIGN -->
+
+<section class="design" id="design">
+    <h1>Designs We Offer</h1>
+    <p>The beautiful designs we offer that can be customized according to your preferences</p>
+
+    <div class="row">
+        <div class="design-col">
+            <img src="/img/park.webp" alt="">
+            <h3>Park</h3>
+            <p>We create stunning gardens that blend nature and human, focusing on beauty, comfort, and sustainability.</p>
+            <a href="ParkPL.html" class="hero-btn">Price List</a>
+        </div>
+        <div class="design-col">
+            <img src="/img/recidential.jpg" alt="">
+            <h3>Recidential</h3>
+            <p>We build high-quality residential properties with a focus on beauty and comfort for its residents.</p>
+            <a href="RecidentialPL.html" class="hero-btn">Price List</a>
+        </div>
+        <div class="design-col">
+            <img src="/img/highrise.jpg" alt="">
+            <h3>Highrise</h3>
+            <p>We build Highrises showcasing of human achievement progress and ability create modern environments.</p>
+            <a href="HighrisePL.html" class="hero-btn">Price List</a>
+        </div>
+    </div>
+</section>
+
+        <!-- JAVASCRIPT -->
+        <script>
+            var navLinks = document.getElementById("nav-links");
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+</body>
+</html>

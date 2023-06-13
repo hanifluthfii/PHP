@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Proses Reservasi</title>
+    <style>
+    *{
+        font-size: 10px;
+    }
+    .container {
+        width: 400px;
+        height: 400px;
+        border: 1px solid #000000;
+        margin: 0 auto;
+        padding: 10px;
+        background-color: white;
+    }
+    h1, h2 {
+        text-align: center;
+    }
+
+    a{
+        text-decoration:none;
+        color:black;
+    }
+    </style>
+</head>
+
+
+<body>
+    
+    <section class="header" id="header">
+        <nav>
+            <a href="design.html"><img src="img/logo.png" alt="logo"></a>
+        <div class="nav-links" id="nav-links">
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="design.html">DESIGN</a></li>
+                <li><a href="testimonials.html">TESTIMONIAL</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="container">
+        <button><a href="design.html">Kembali</a></button>
+        <h1>Highrise Price List</h1>
+        <table>
+            <tr>
+                <th>Jasa</th>
+                <th>Harga</th>
+                <th>Keterangan</th>
+            </tr>
+            <tr>
+                <td>Konsultasi Awal</td>
+                <td>Rp 2.000.000 - Rp 5.000.000</td>
+                <td>Biaya konsultasi awal untuk mendiskusikan visi, kebutuhan, dan anggaran proyek Highrise</td>
+            </tr>
+            <tr>
+                <td>Rancangan Konseptual</td>
+                <td>Rp 10.000.000 - Rp 20.000.000</td>
+                <td>Pembuatan sketsa atau gambar konseptual yang menggambarkan tata letak, elemen desain, dan fitur utama Highrise</td>
+            </tr>
+            <tr>
+                <td>Rancangan Detail</td>
+                <td>Rp 30.000.000 - Rp 50.000.000</td>
+                <td>Pembuatan rancangan detail yang mencakup spesifikasi material, denah lantai, elevasi, tata letak ruangan, dan elemen desain lainnya untuk Highrise</td>
+            </tr>
+            <tr>
+                <td>Pengawasan Pelaksanaan</td>
+                <td>15% - 20% dari total biaya proyek</td>
+                <td>Mengawasi pelaksanaan konstruksi Highrise dan memastikan kepatuhan terhadap rancangan serta standar kualitas yang diinginkan</td>
+            </tr>
+            </table>
+            
+        
+
+        <!-- JAVASCRIPT -->
+        <script>
+            var navLinks = document.getElementById("nav-links");
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+
+
+
+</div>
+</body>
+</html>
+
+

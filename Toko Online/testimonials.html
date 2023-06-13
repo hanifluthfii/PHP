@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasa Arsitek </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <section class="header" id="header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+        <div class="nav-links" id="nav-links">
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="design.html">DESIGN</a></li>
+                <li><a href="testimonials.html">TESTIMONIAL</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+<!-- TESTIMONIAL -->
+
+<section class="testimonials" id="testimonials">
+    <h1>What Our Customer Says</h1>
+    <p>Building loyalty through exceptional service, we strive to make every customer interaction a satisfying and memorable one.</p>
+
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="img/user1.jpg" alt="">
+            <div>
+                <p>"Mereka mendengarkan kebutuhan kami, memberikan ide brilian, dan menghadirkan rumah impian yang indah, fungsional, dan nyaman. Terima kasih atas dedikasi, kerja keras, dan keahlian yang luar biasa!"</p>
+                <h3>Customer 1</h3>
+            </div>
+        </div>
+        <div class="testimonial-col">
+            <img src="img/user2.jpg" alt="">
+            <div>
+                <p>
+                    "Transformasi taman kami luar biasa! Jasa arsitek memberikan sentuhan magis dalam mewujudkan taman impian kami. Luar biasa!"</p>
+                <h3>Customer 2</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- JAVASCRIPT -->
+        <script>
+            var navLinks = document.getElementById("nav-links");
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+</body>
+</html>
